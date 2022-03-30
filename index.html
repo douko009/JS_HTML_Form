@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>Are you depressed?</title>
+    <link href="./assets/main.css" rel="stylesheet" type="text/css">
+    <h1>ARE YOU DEPRESSED?</h1>
+</head>
+<body>
+<form action="results.html" method="GET">
+
+    <div>
+        <label> First Name:
+            <input type="text" name="FirstName" id="name" required>
+        </label>
+    </div>
+    <div>
+        <label> Last Name: 
+            <input type="text" name="LastName" id="name" required>
+        </label>
+    </div>
+    <div>
+        <label>
+            Phone number:
+            <input type="tel" name="Phone Number" id="phone">
+        </label>
+    </div>
+    <div>
+        Gender:
+        <div>
+                <label for="male">Male</label>
+                    <input type="radio" name="Gender" id="male" value="Male">
+                <label for="female">Female</label>
+                    <input type="radio" name="Gender" id="female" value="Female">
+        </div>
+    </div>
+    <br>
+    <div>
+        <label for="age">College Level(Year)</label>
+        <input type="number" name="College level" id="age" min="1" max="12" step="1" required>
+        
+    </div>
+    <br>
+    <div>
+        <label>Tell me about yourself.
+            <br>
+            <textarea id="info" name="info" placeholder="tell me about your school performance or problems, personality, anything about your self"></textarea>
+
+        </label>
+    </div>
+
+    <br>
+    <div>
+        Are you depressed from studies?
+        <br>
+                <label>
+                    Yes
+                    <input type="radio" name="Studies" id="Dyes" value="Yes">
+                    No
+                    <input type="radio" name="Studies" id="fDno" value="No">
+                </label>
+    </div>
+
+    <br>
+    <div>
+        Do you often have sleeping problems?
+        <br>
+                <label>
+                    Yes
+                    <input type="radio" name="Sleeping Problem" id="Syes" value="Yes">
+                    No
+                    <input type="radio" name="Sleeping Problem" id="Sno" value="No">
+                </label>
+    </div>
+    <br>
+    <div>
+        Do you have any ways to cope with your depression?
+        <br>
+                <label>
+                    Yes
+                    <input type="radio" name="Coping" id="Cyes" value="Yes">
+                    No
+                    <input type="radio" name="Coping" id="Dno" value="No">
+                </label>
+    </div>
+    <br>
+    <div>
+        What do you think are the main sources of your depression?
+        <div>
+          <label for="family">Family</label>
+          <input type="checkbox" name="Family" id="family">
+        </div>
+        <div>
+          <label for="school">School</label>
+          <input type="checkbox" name="School" id="school">
+        </div>
+        <div>
+            <label for="lockdown">Lock Downs</label>
+            <input type="checkbox" name="Lock Down" id="lock">
+        </div>
+        <div>
+            <label for="relationship">Relationships</label>
+            <input type="checkbox" name="Relationship" id="relationship">
+        </div>
+        <label>If not stated above, (If you want) tell your problems here
+            <br>
+            <textarea id="info" name="problem" placeholder="please let us know"></textarea>
+
+        </label>
+    <div>
+    <br>
+    <div>
+        <label>
+            Email
+            <input type="email" name="email" id="email" required>
+        </label>
+    </div>
+    <br>
+    <div>
+        <label> Do you agree with our <a href="/assets/terms.html" target="_blank">terms and condition</a>?
+            <input type="checkbox" name="agreed" id="agreed" required>
+            
+        </label>
+    </div>
+
+
+
+
+
+    <br>
+    <input type="hidden" name="Nice!" value="You can do it!">
+    <button type="submit" class="press">SUBMIT</button>
+
+</form>
+
+</body>
+</html>
